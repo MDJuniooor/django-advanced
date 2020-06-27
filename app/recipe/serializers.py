@@ -31,7 +31,7 @@ class RecipeSerializer(serializers.ModelSerializer):
         many=True,
         queryset=Tag.objects.all()
     )
-    
+
     class Meta:
         model = Recipe
         fields = (
